@@ -5,9 +5,10 @@
             <hr>
             <!--<a href="/">Home</a>
             <a href="/user">User</a>-->
-            <a [routerLink]="['']">Home</a> |
+            <!--<a [routerLink]="['']" [queryParams]="{analytics: 500}" [fragment]="'section1'">Home</a> |-->
+            <a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a> |
             <input type="text" #id (input)="0">
-            <a [routerLink]="['user', id.value]">User</a>
+            <a [routerLink]="['user', id.value]" [preserveQueryParams]="true">User</a>
             <hr>
             <router-outlet></router-outlet>
         </div>
