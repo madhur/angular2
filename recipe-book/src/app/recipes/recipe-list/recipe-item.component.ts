@@ -5,13 +5,9 @@ import {Recipe} from '../recipe'
   selector: 'rb-recipe-item',
   templateUrl: './recipe-item.component.html'
 })
-export class RecipeItemComponent implements OnInit {
+export class RecipeItemComponent {
   @Input() recipe: Recipe;
-  recipeId: number;
+  @Input() recipeId: number;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  
 }
