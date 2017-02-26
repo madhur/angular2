@@ -6,9 +6,9 @@
             <!--<a href="/">Home</a>
             <a href="/user">User</a>-->
             <!--<a [routerLink]="['']" [queryParams]="{analytics: 500}" [fragment]="'section1'">Home</a> |-->
-            <a [routerLink]="['']">Home</a> |
+            <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a> |
             <input type="text" #id (input)="0">
-            <a [routerLink]="['user', id.value]" [preserveQueryParams]="true">User</a>
+            <a [routerLink]="['user', id.value]" [preserveQueryParams]="true" routerLinkActive="active">User</a>
             <hr>
             <router-outlet></router-outlet>
         </div>
