@@ -8,6 +8,7 @@ import {Ingredient} from '../shared/ingredient'
 export class ShoppingListComponent implements OnInit {
 
   items: Ingredient[] = [];
+  
 
   constructor() { }
 
