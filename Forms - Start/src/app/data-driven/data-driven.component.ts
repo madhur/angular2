@@ -47,6 +47,10 @@ export class DataDrivenComponent {
             ])
 
         });
+
+        this.myForm.valueChanges.subscribe(
+            (data: any) => console.log(data)
+        );
     }
 
     onAddHobby() {
