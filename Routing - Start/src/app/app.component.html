@@ -5,8 +5,9 @@
             <hr>
             <!--<a href="/">Home</a>
             <a href="/user">User</a>-->
-            <a [routerLink]="['']">Home</a>
-            <a [routerLink]="['user']">User</a>
+            <a [routerLink]="['']">Home</a> |
+            <input type="text" #id (input)="0">
+            <a [routerLink]="['user', id.value]">User</a>
             <hr>
             <router-outlet></router-outlet>
         </div>
