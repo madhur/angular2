@@ -36,6 +36,8 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
           this.isNew = true;
           this.recipe = null;
         }
+
+        this.initForm();
       }
     );
   }
@@ -47,7 +49,7 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
-  private initForm(isNew: boolean) {
+  private initForm() {
     let recipeName = '';
     let recipeImageUrl = '';
     let recipeContent = '';
@@ -58,9 +60,9 @@ export class RecipeEditComponent implements OnInit, OnDestroy {
           recipeIngredients.push(
             new FormGroup({
               name: new FormControl(this.recipe.ingredients[i].name, Validators.required),
-              amount: new FormControl(this.recipe.ingredients[i].amount, Validators.required, Validators.pattern('\\d+'))
+              amount: new FormControl(this.recipe.ingredients[i].amount, [Validators.required, Validators.pattern('\\d+')])
             })
-          )
+          );
       }
 
       recipeName = this.recipe.name;
