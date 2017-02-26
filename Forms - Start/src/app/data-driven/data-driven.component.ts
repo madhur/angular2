@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
+import {FormGroup, FormControl, Validators, FormArray, FormBuilder} from '@angular/forms';
 
 
 @Component({
@@ -11,24 +11,41 @@ export class DataDrivenComponent {
 
     genders = ['male', 'female'];
 
-    constructor() {
+    constructor(private formBuilder: FormBuilder) {
         // this.myForm = new FormGroup({
         //     'username': new FormControl('Madhur', Validators.required),
         //     'email': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")]),
         //     'password': new FormControl('', Validators.required) 
         // });
 
-        this.myForm = new FormGroup({
-            'userData': new FormGroup({
-                'username': new FormControl('Madhur', Validators.required),
-                'email': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])
-            }),
+        // this.myForm = new FormGroup({
+        //     'userData': new FormGroup({
+        //         'username': new FormControl('Madhur', Validators.required),
+        //         'email': new FormControl('', [Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])
+        //     }),
             
-            'password': new FormControl('', Validators.required),
-            'gender': new FormControl('male'),
-            'hobbies': new FormArray([
-                new FormControl('Cooking', Validators.required)
+        //     'password': new FormControl('', Validators.required),
+        //     'gender': new FormControl('male'),
+        //     'hobbies': new FormArray([
+        //         new FormControl('Cooking', Validators.required)
+        //     ])
+        // });
+
+
+        this.myForm = formBuilder.group({
+            'userData': formBuilder.group({
+                'username': ['Madhur', Validators.required],
+                'email': ['', [
+                    Validators.required,
+                    Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+                ]]
+            }),
+            'password': ['', Validators.required],
+            'gender': ['male'],
+            'hobbies': formBuilder.array( [
+             ['Cooking', Validators.required]
             ])
+
         });
     }
 
