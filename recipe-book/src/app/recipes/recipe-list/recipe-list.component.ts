@@ -7,9 +7,12 @@ import {Recipe} from '../recipe';
 })
 export class RecipeListComponent implements OnInit {
 
-  recipes: Recipe[];
+  recipes: Recipe[] = [
+      new Recipe('Chutney', 'good chutney', 'http://www.vegrecipesofindia.com/wp-content/uploads/2013/03/coriander-chutney-recipe.jpg', []),
+      new Recipe('Chicken', 'good chicken' , 'http://www.pngmart.com/files/2/Cooked-Chicken-PNG-Transparent-Image.png', [])
+  ];
   @Output() recipeSelected = new EventEmitter<Recipe>();
-  recipe = new Recipe('dummy', 'dummy desc', 'http://thumbs2.ebaystatic.com/d/l225/m/mM5u2kVAYbs3IRlwPfl6uOA.jpg')
+ // recipe = new Recipe('dummy', 'dummy desc', 'http://thumbs2.ebaystatic.com/d/l225/m/mM5u2kVAYbs3IRlwPfl6uOA.jpg')
 
   constructor() { }
 
