@@ -13,4 +13,7 @@ export class ShoppingListService {
 
   constructor() { }
 
+  addItem(item: Ingredient) {
+    this.items.push(item);
+  }
 }
