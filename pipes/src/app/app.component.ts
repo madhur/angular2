@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myvalue='lowercase';
+  values = ['Milk', 'Bread', 'Beans'];
 }
