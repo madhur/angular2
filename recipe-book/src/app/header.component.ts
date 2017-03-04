@@ -12,6 +12,19 @@ export class HeaderComponent {
   
   onFetch() {
 
+        this.recipeService.fetchData().subscribe(
+      data => {
+        let recipes = [];
+        debugger;
+        for(var key in data.json()) {
+          recipes.push(data.json()[key]);
+        }
+
+        console.log(recipes);
+      },
+      error => console.error(error)
+    );
+
   }
 
   onStore() {

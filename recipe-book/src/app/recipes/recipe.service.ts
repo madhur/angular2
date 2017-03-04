@@ -52,6 +52,12 @@ export class RecipeService {
   }
 
   fetchData() {
+    const headers = new Headers( {
+      'Content-Type': 'application/json'
+    });
 
+    return this.http.get('https://recipebook-5e9ec.firebaseio.com/recipes.json', {
+      headers: headers
+    });
   }
 }
