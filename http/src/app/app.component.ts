@@ -10,12 +10,16 @@ import {Response} from '@angular/http';
 export class AppComponent implements OnInit {
 
   items: any[] = [];
+  asyncString;
+
   constructor(private httpService: HttpService){}
 
   ngOnInit() {
     this.httpService.getData().subscribe(
       (data: Response) => console.log(data)
     );
+
+    this.asyncString = this.httpService.getData();
   }
 
   onSubmit(username: string, email: string) {
