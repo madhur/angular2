@@ -1,0 +1,139 @@
+<div id={{inning.name}}>
+            <div class="score-card">
+                <div class="row ml pt-5 mt-0 table-header">
+                    <div class="col col-50">
+                        <p class=""><span class="table-field-name">Batsman</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">R</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">B</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">4s</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">6s</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">SR</span></p>
+                    </div>
+                </div>
+                <span *ngFor="let player of inning.batting_team.players">
+	                      <div class="row ml pt-5 mt-0 table-child">
+	                          <div class="col col-50">
+	                              <p class=""><span class="table-field-right-name">{{ player.name}}</span></p>
+	                          </div>
+	                          <div class="col">
+	                              <p class=""><span class="table-field-right-name">{{ player.runs }}</span></p>
+	                          </div>
+	                          <div class="col">
+	                              <p class=""><span class="table-field-right-name">{{ player.balls }}</span></p>
+	                          </div>
+	                          <div class="col">
+	                              <p class=""><span class="table-field-right-name">{{ player.fours }}</span></p>
+	                          </div>
+	                          <div class="col">
+	                              <p class=""><span class="table-field-right-name">{{ player.sixes }}</span></p>
+	                          </div>
+	                          <div class="col">
+	                              <p class=""><span
+	                                      class="table-field-right-name">{{ player.strike_rate }}</span></p>
+	                          </div>
+	                      </div>
+	                        <div class="row ml mt-0 table-child-details">
+	                            <div class="col">
+	                                <p class="">
+	                                    <span class="table-field-child-name" ng-show="player.dismissed">{{ player.out_str }}</span>
+	                                    <span class="table-field-child-name" ng-show="!player.dismissed">not out</span>
+	                                </p>
+	                            </div>
+	                        </div>
+	                  </span>
+
+
+                <div class="row ml pt-5 mt-0 table-child">
+                    <div class="col col-50">
+                        <p class=""><span class="table-field-right-name">Extras</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{ inning.batting_team.extras }}</span></p>
+                    </div>
+                </div>
+                <div class="row ml mt-0 table-child-details">
+                    <div class="col">
+                        <p class=""><span class="table-field-child-name">b {{ inning.batting_team.bye }},lb {{ inning.batting_team.legbye }},w {{ inning.batting_team.wide }},nb {{ inning.batting_team.noball }}</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row ml pt-5 mt-0 table-child">
+                    <div class="col">
+                        <p class=""><span class="table-field-name">Total:</span></p>
+                    </div>
+                    <div class="col">
+                        <p class="text-center"><span class="table-field-name">{{ inning.batting_team.runs }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class="floatRight mr-5"><span
+                                class="table-field-name">RR: {{ inning.batting_team.run_rate}}</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ml pt-5 mt-0">
+                <div class="col">
+                    <p class=""><span class="table-field-name">Did not bat</span></p>
+                </div>
+                <div class="col col-67">
+                    <p class=""><span class="table-field-right-name">
+           		<span *ngFor="let ytb of inning.batting_team.yet_to_bat">{{ ytb }}<span>, </span></span>
+        </span></p>
+                </div>
+            </div>
+
+            <div class="bowling-card">
+                <div class="row ml pt-5 mt-0 table-header">
+                    <div class="col col-50">
+                        <p class=""><span class="table-field-name">Bowling</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">O</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">M</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">R</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">W</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-name">Eco</span></p>
+                    </div>
+                </div>
+               <div *ngFor="let player of inning.bowling_team.players" class="row ml pt-5 mt-0 table-child" key={player.name}>
+                    <div class="col col-50">
+                        <p class=""><span class="table-field-right-name">{{ player.name }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{ player.overs }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{ player.maiden_overs }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{ player.runs }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{  player.wickets }}</span></p>
+                    </div>
+                    <div class="col">
+                        <p class=""><span class="table-field-right-name">{{ player.economy }}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>

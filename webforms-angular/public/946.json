@@ -1,0 +1,447 @@
+{
+  "category": 12,
+  "score_card": [
+    {
+      "bowling_team": {
+        "players": [
+          {
+            "runs": 37,
+            "balls": 24,
+            "name": "IK Pathan",
+            "maiden_overs": 0,
+            "wickets": 0,
+            "extras": 0,
+            "fullname": "Irfan Pathan",
+            "overs": "4.0",
+            "economy": 9.25
+          },
+          {
+            "runs": 16,
+            "balls": 18,
+            "name": "AB Dinda",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 0,
+            "fullname": "Ashok Dinda",
+            "overs": "3.0",
+            "economy": 5.33
+          },
+          {
+            "runs": 28,
+            "balls": 18,
+            "name": "DL Chahar",
+            "maiden_overs": 0,
+            "wickets": 0,
+            "extras": 3,
+            "fullname": "Deepak Chahar",
+            "overs": "3.0",
+            "economy": 9.33
+          },
+          {
+            "runs": 24,
+            "balls": 12,
+            "name": "NLTC Perera",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 0,
+            "fullname": "Thisara Perera",
+            "overs": "2.0",
+            "economy": 12
+          },
+          {
+            "runs": 34,
+            "balls": 24,
+            "name": "R Ashwin",
+            "maiden_overs": 0,
+            "wickets": 4,
+            "extras": 0,
+            "fullname": "Ravichandran Ashwin",
+            "overs": "4.0",
+            "economy": 8.5
+          },
+          {
+            "runs": 32,
+            "balls": 24,
+            "name": "Adam Zampa",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 0,
+            "fullname": "Adam Zampa",
+            "overs": "4.0",
+            "economy": 8
+          }
+        ],
+        "fullname": "Rising Pune Supergiants",
+        "name": "RPS"
+      },
+      "innings": "1",
+      "score": "172/7(20.0)",
+      "name": "KXIP",
+      "batting_team": {
+        "wide": 3,
+        "runs": 172,
+        "name": "KXIP",
+        "sixes": 8,
+        "run_rate": "8.60",
+        "fours": 13,
+        "yet_to_bat": [
+          "M Sharma",
+          "S Sharma"
+        ],
+        "wickets": 7,
+        "noball": 0,
+        "players": [
+          {
+            "sixes": 1,
+            "runs": 30,
+            "balls": 27,
+            "name": "HM Amla",
+            "fours": 4,
+            "strike_rate": 111.11,
+            "dismissed": true,
+            "out_str": "c GJ Bailey b R Ashwin",
+            "fullname": "Hashim Amla"
+          },
+          {
+            "sixes": 3,
+            "runs": 59,
+            "balls": 41,
+            "name": "M Vijay",
+            "fours": 4,
+            "strike_rate": 143.9,
+            "dismissed": true,
+            "out_str": "bowled b R Ashwin",
+            "fullname": "Murali Vijay"
+          },
+          {
+            "sixes": 0,
+            "runs": 3,
+            "balls": 4,
+            "name": "WP Saha",
+            "fours": 0,
+            "strike_rate": 75,
+            "dismissed": true,
+            "out_str": "c R Ashwin b Adam Zampa",
+            "fullname": "Wriddhiman Saha"
+          },
+          {
+            "sixes": 3,
+            "runs": 51,
+            "balls": 30,
+            "name": "GR Singh",
+            "fours": 3,
+            "strike_rate": 170,
+            "dismissed": true,
+            "out_str": "c DL Chahar b R Ashwin",
+            "fullname": "Gurkeerat Singh Mann"
+          },
+          {
+            "sixes": 0,
+            "runs": 7,
+            "balls": 5,
+            "name": "DA Miller",
+            "fours": 1,
+            "strike_rate": 140,
+            "dismissed": true,
+            "out_str": "lbw b R Ashwin",
+            "fullname": "David Miller"
+          },
+          {
+            "sixes": 0,
+            "runs": 5,
+            "balls": 5,
+            "name": "F Behardien",
+            "fours": 1,
+            "strike_rate": 100,
+            "dismissed": true,
+            "out_str": "c  AM Rahane b AB Dinda",
+            "fullname": "Farhaan Behardien"
+          },
+          {
+            "sixes": 0,
+            "runs": 1,
+            "balls": 3,
+            "name": "A Patel",
+            "fours": 0,
+            "strike_rate": 33.33,
+            "dismissed": true,
+            "out_str": "c DL Chahar b NLTC Perera",
+            "fullname": "Akshar Patel"
+          },
+          {
+            "sixes": 1,
+            "runs": 11,
+            "balls": 4,
+            "name": "R Dhawan",
+            "fours": 0,
+            "strike_rate": 275,
+            "fullname": "Rishi Dhawan"
+          },
+          {
+            "sixes": 0,
+            "runs": 1,
+            "balls": 1,
+            "name": "KY Abbott",
+            "fours": 0,
+            "strike_rate": 100,
+            "fullname": "Kyle Abbott"
+          }
+        ],
+        "score": "172/7(20.0)",
+        "fullname": "Kings XI Punjab",
+        "bye": 0,
+        "overs": "20.0",
+        "legbye": 1,
+        "extras": 4
+      }
+    },
+    {
+      "bowling_team": {
+        "players": [
+          {
+            "runs": 29,
+            "balls": 24,
+            "name": "S Sharma",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 2,
+            "fullname": "Sandeep Sharma",
+            "overs": "4.0",
+            "economy": 7.25
+          },
+          {
+            "runs": 39,
+            "balls": 24,
+            "name": "M Sharma",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 1,
+            "fullname": "Mohit Sharma",
+            "overs": "4.0",
+            "economy": 9.75
+          },
+          {
+            "runs": 25,
+            "balls": 18,
+            "name": "KY Abbott",
+            "maiden_overs": 0,
+            "wickets": 0,
+            "extras": 0,
+            "fullname": "Kyle Abbott",
+            "overs": "3.0",
+            "economy": 8.33
+          },
+          {
+            "runs": 43,
+            "balls": 24,
+            "name": "A Patel",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 2,
+            "fullname": "Akshar Patel",
+            "overs": "4.0",
+            "economy": 10.75
+          },
+          {
+            "runs": 15,
+            "balls": 12,
+            "name": "GR Singh",
+            "maiden_overs": 0,
+            "wickets": 2,
+            "extras": 1,
+            "fullname": "Gurkeerat Singh Mann",
+            "overs": "2.0",
+            "economy": 7.5
+          },
+          {
+            "runs": 21,
+            "balls": 18,
+            "name": "R Dhawan",
+            "maiden_overs": 0,
+            "wickets": 1,
+            "extras": 1,
+            "fullname": "Rishi Dhawan",
+            "overs": "3.0",
+            "economy": 7
+          }
+        ],
+        "fullname": "Kings XI Punjab",
+        "name": "KXIP"
+      },
+      "innings": "1",
+      "score": "173/6(20.0)",
+      "name": "RPS",
+      "batting_team": {
+        "wide": 7,
+        "runs": 173,
+        "name": "RPS",
+        "sixes": 8,
+        "run_rate": "8.65",
+        "fours": 14,
+        "yet_to_bat": [
+          "Adam Zampa",
+          "DL Chahar",
+          "AB Dinda"
+        ],
+        "wickets": 6,
+        "noball": 0,
+        "players": [
+          {
+            "sixes": 0,
+            "runs": 19,
+            "balls": 15,
+            "name": " AM Rahane",
+            "fours": 4,
+            "strike_rate": 126.67,
+            "dismissed": true,
+            "out_str": "c WP Saha b S Sharma",
+            "fullname": "Ajinkya Rahane"
+          },
+          {
+            "sixes": 1,
+            "runs": 30,
+            "balls": 29,
+            "name": "UT Khawaja",
+            "fours": 1,
+            "strike_rate": 103.45,
+            "dismissed": true,
+            "out_str": "c DA Miller b GR Singh",
+            "fullname": "Usman Khawaja"
+          },
+          {
+            "sixes": 0,
+            "runs": 9,
+            "balls": 11,
+            "name": "GJ Bailey",
+            "fours": 2,
+            "strike_rate": 81.82,
+            "dismissed": true,
+            "out_str": "st WP Saha b A Patel",
+            "fullname": "George Bailey"
+          },
+          {
+            "sixes": 1,
+            "runs": 17,
+            "balls": 15,
+            "name": "SS Tiwary",
+            "fours": 1,
+            "strike_rate": 113.33,
+            "dismissed": true,
+            "out_str": "c F Behardien b GR Singh",
+            "fullname": "Saurabh Tiwary"
+          },
+          {
+            "sixes": 5,
+            "runs": 64,
+            "balls": 32,
+            "name": "MS Dhoni",
+            "fours": 4,
+            "strike_rate": 200,
+            "fullname": "MS Dhoni"
+          },
+          {
+            "sixes": 0,
+            "runs": 2,
+            "balls": 3,
+            "name": "IK Pathan",
+            "fours": 0,
+            "strike_rate": 66.67,
+            "dismissed": true,
+            "out_str": "c WP Saha b R Dhawan",
+            "fullname": "Irfan Pathan"
+          },
+          {
+            "sixes": 1,
+            "runs": 23,
+            "balls": 14,
+            "name": "NLTC Perera",
+            "fours": 2,
+            "strike_rate": 164.29,
+            "dismissed": true,
+            "out_str": "c WP Saha b M Sharma",
+            "fullname": "Thisara Perera"
+          },
+          {
+            "sixes": 0,
+            "runs": 1,
+            "balls": 1,
+            "name": "R Ashwin",
+            "fours": 0,
+            "strike_rate": 100,
+            "fullname": "Ravichandran Ashwin"
+          }
+        ],
+        "score": "173/6(20.0)",
+        "fullname": "Rising Pune Supergiants",
+        "bye": 0,
+        "overs": "20.0",
+        "legbye": 1,
+        "extras": 8
+      }
+    }
+  ],
+  "system_time": 1463839546740.026,
+  "data": {
+    "cta": [
+      {
+        "text": "View Full scorecard",
+        "deeplink": "/feed/mobileapp/v4/cricket/946",
+        "action_type": 1
+      }
+    ],
+    "match_details": {
+      "start_at": 1463826600000,
+      "description": "Pune won by 7 wickets",
+      "venue": "04:00 PM IST May 21, 2016 <br/> Dr. Y.S. Rajasekhara Reddy ACA-VDCA Cricket Stadium, Visakhapatnam, India",
+      "channel_id": "8ea4a9b9-2b3e-42e5-9dd0-991f274b0025",
+      "state": 3,
+      "time": ""
+    },
+    "card_title": "Indian Premier League 2016",
+    "team_a": {
+      "starring_player": "",
+      "short_name": "RPS",
+      "image_urls": {
+        "hdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_M.jpg",
+        "mdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_S.jpg",
+        "xxxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_X.jpg",
+        "xxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_X.jpg",
+        "xhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_L.jpg",
+        "ldpi": "http://helpchat.s3.amazonaws.com/feed/cricket/pune_supergiants_S.jpg"
+      },
+      "text_color": "#9f9f9f",
+      "score": [
+        "173/6(20.0)"
+      ],
+      "name": "Rising Pune Supergiants"
+    },
+    "team_b": {
+      "starring_player": "",
+      "short_name": "KXIP",
+      "image_urls": {
+        "hdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_M.jpg",
+        "mdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_S.jpg",
+        "xxxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_X.jpg",
+        "xxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_X.jpg",
+        "xhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_L.jpg",
+        "ldpi": "http://helpchat.s3.amazonaws.com/feed/cricket/Kings%20XI%20Punjab_S.jpg"
+      },
+      "text_color": "#9f9f9f",
+      "score": [
+        "172/7(20.0)"
+      ],
+      "name": "Kings XI Punjab"
+    },
+    "card_subtitle": "53rd Match",
+    "id": 946,
+    "card_icon": {
+      "hdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_hdpi.png",
+      "mdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_mdpi.png",
+      "xxxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_xxhdpi.png",
+      "xxhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_xxhdpi.png",
+      "xhdpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_xhdpi.png",
+      "ldpi": "http://helpchat.s3.amazonaws.com/feed/cricket/card_icon/sports_mdpi.png"
+    }
+  },
+  "updated_time": "Updated few seconds ago"
+}

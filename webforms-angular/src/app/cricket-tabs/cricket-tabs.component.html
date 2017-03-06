@@ -1,0 +1,9 @@
+<md-tab-group>
+  <md-tab *ngFor="let inning of matchData.score_card ">
+    <template md-tab-label>{{inning.name}}</template>
+    <template md-tab-content>
+        <app-cricket-tab-item [inning]="inning"></app-cricket-tab-item>
+    </template>
+  </md-tab>
+  
+</md-tab-group>
