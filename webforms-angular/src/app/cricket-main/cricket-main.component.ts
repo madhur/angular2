@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {CricketService} from '../cricket-service.service';
 import {WindowRef} from '../window-ref';
+import { select, NgRedux } from  '@angular-redux/store';
+import {CricketActions} from '../actions';
 
 @Component({
   selector: 'app-cricket-main',
@@ -9,14 +11,21 @@ import {WindowRef} from '../window-ref';
 })
 export class CricketMainComponent implements OnInit {
 
-  private cricketData:any = {};
+  //private  cricketData:any = {};
+  @select(state => state.data) matchData;
 
-  constructor(private cricketService: CricketService, private winRef: WindowRef) { }
+  constructor(private cricketService: CricketService, private winRef: WindowRef, private redux: NgRedux<any>, private cricketActions: CricketActions) { }
 
   ngOnInit() {
 
     this.startTimer();
+   // console.log(this.cricketData);
 
+    // this.matchData.subscribe(
+    //  data=> {
+    //     this.cricketData = data;
+    //   }
+    // );
   }
 
   startTimer()
@@ -29,15 +38,17 @@ export class CricketMainComponent implements OnInit {
     //  debugger;
 			const matchId = url.substr(url.lastIndexOf('/') + 1);
 
-      this.cricketService.getCricketData(matchId).subscribe(
-        data => {
-          this.cricketData = data;
-        },
-        err => {
-            console.log(err);
-        }
+       this.redux.dispatch(<any>this.cricketActions.getCricket(matchId));
+      
+      // this.cricketService.getCricketData(matchId).subscribe(
+      //   data => {
+      //     this.cricketData = data;
+      //   },
+      //   err => {
+      //       console.log(err);
+      //   }
         
-      );
+      // );
 
 		}, 2000);
 	}
